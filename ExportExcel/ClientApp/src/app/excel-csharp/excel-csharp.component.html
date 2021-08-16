@@ -1,0 +1,14 @@
+<div class="page-header">
+    <h1>Gerando o excel atráves do C#</h1>
+</div>
+<p class="lead">
+    O C# obtem os dados da base ou de qquer outro lugar e converte esses dados num datatable ou dataset, e usando a biblioteca XCloseXML
+    você cria o excel (colunas, linhas, cores de linhas, bordas e etc, etc, etc), usa o datatable ou dataset para os dados das linhas.
+    O endpoint da API retorna o stream desse excel para o angular se for para um blob ou uma string do tipo base64.
+</p>
+<p>
+    <button class="btn btn-primary" (click)="gerarExcelBlob()">Gerar excel</button>
+</p>
+<p>
+    <button class="btn btn-primary" (click)="gerarExcelBase64()">Gerar excel base64 string</button>
+</p>
